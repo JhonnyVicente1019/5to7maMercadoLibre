@@ -1,4 +1,4 @@
-namespace AGBD
+namespace Mercado.core
 {
     public class Cliente
     {
