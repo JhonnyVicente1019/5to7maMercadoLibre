@@ -17,7 +17,7 @@ CREATE TRIGGER aftinsCompra AFTER INSERT ON Compra
 FOR EACH ROW
 BEGIN
 	UPDATE Producto
-    SET Cantidades = Cantidad - NEW.CUnidades
+    SET Cantidad = Cantidad - NEW.CUnidades
     WHERE idProducto;
 END$$
 
