@@ -16,9 +16,9 @@ DELIMITER $$
 CREATE TRIGGER aftinsCompra AFTER INSERT ON Compra
 FOR EACH ROW
 BEGIN
-	UPDATE Compra
-    SET CUnidades
-    WHERE 
+	UPDATE Producto
+    SET Cantidades = Cantidad - NEW.CUnidades
+    WHERE idProducto;
 END$$
 
 
