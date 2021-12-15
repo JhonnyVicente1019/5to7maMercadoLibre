@@ -1,6 +1,3 @@
-using System.Collections.Generic;
-using System.Linq;
-using ConsoleTables;
 using System;
 
 namespace Mercado.core
